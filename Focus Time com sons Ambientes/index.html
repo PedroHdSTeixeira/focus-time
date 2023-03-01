@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Focus Time | Sons Ambientes</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <div class="time">
+            <div class="time-display">
+            <span class="minutes">05</span>
+            <span>:</span>
+            <span class="seconds">00</span>
+            </div>
+        
+
+        <div class="time-controls">
+            <div class="button-controls">
+            <button class="button-timer play">
+                <img src="buttons-time/play.svg" alt="Imagem de um botão de play.">
+            </button>
+            <button class="button-timer stop">
+                <img src="buttons-time/stop.svg" alt="Imagem de um botão de stop.">
+            </button>
+            <button class="button-timer plus">
+                <img src="buttons-time/plus.svg" alt="Imagem de um botão com sinal de + para aumentar.">
+            </button>
+            <button class="button-timer minus">
+                <img src="buttons-time/minus.svg" alt="Imagem de um botão com sinal de - para diminuir.">
+            </button>
+            </div>
+        </div>
+        </div>
+    </main>
+
+        <div class="sound-controls">
+        <button class="sound-card-wrapper forest">
+                <audio loop src="ambient-sounds/forest.wav" class="forest-sound"></audio>
+                <img src="sound-controls/forest.svg" alt="Imagen de uma arvore simbolizando o som ambiente em uma floresta.">
+                <input class="volume forest-volume" type="range" min="0" max="1" step="0.1" on-focus>    
+
+            </button>
+        <button class="sound-card-wrapper rain">
+                <audio loop src="ambient-sounds/rain.wav" class="rain-sound"></audio>
+                <img src="sound-controls/rain.svg" alt="Imagen de uma nuvem chovendo simbolizando o som ambiente de chuva.">
+                <input class="volume rain-volume" type="range" min="0" max="1" step="0.1" on-focus>    
+
+            </button>
+        <button class="sound-card-wrapper coffee">
+                <audio src="ambient-sounds/coffe-house.wav" class="coffee-sound"></audio>
+                <img src="sound-controls/coffee.svg" alt="Imagen de uma cafeteria simbolizando o som ambiente em uma cafeteria.">
+                <input class="volume coffee-volume" type="range" min="0" max="1" step="0.1" on-focus>    
+
+            </button>
+        <button class="sound-card-wrapper fire">
+                <audio src="ambient-sounds/fireplace.wav" class="fire-sound"></audio>
+                <img src="sound-controls/fire.svg" alt="Imagen de uma chama de fogo simbolizando o som ambiente em uma lareira ou fogueira.">
+                <input class="volume fire-volume" type="range" min="0" max="1" step="0.1" on-focus>    
+
+            </button>
+            <audio src="ambient-sounds/audios_kichen-timer.mp3" class="kitchen-timer"></audio>
+        </div>
+
+    <script src="js/main.js" type="module"></script>
+</body>
+</html>

@@ -1,0 +1,160 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 62.5%;
+    --bg-color: #E5E5E5;
+    --time-color: #323238;
+    --text-time-color: #323238;
+    --img-sound-color: #323238;
+    --bg-soud-color: rgb(148, 148, 150);
+    --text-font-family: 'Roboto', sans-serif;
+
+    --bg-color-selection: rgb(2, 132, 172);
+}
+
+body {
+    background-color: var(--bg-color);
+    font-family: var(--text-font-family);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+
+}
+
+main {
+    width: 32.1rem;
+    height: 21.3rem;
+
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    margin-right: 19.2rem;
+
+    
+}
+
+.time-display {
+    color: var(--text-time-color);
+    font-weight: 500;
+    font-size: 12.6rem;
+    line-height: 14.8rem;
+
+    display: flex;
+    justify-content: center;
+
+    margin-bottom: 4.8rem;
+}
+
+.button-controls {
+    display: flex;
+
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.button-timer {
+    border: none;
+    background-color: var(--bg-color);
+    padding: 0 .5rem;
+    cursor: pointer;
+
+}
+
+.button-timer:hover {
+    scale: 1.2;
+}
+
+.sound-controls{
+    height: 33.6rem;
+    width: 30.8rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+    gap: 3.2rem;
+
+
+}
+
+.button-controls img {
+    box-shadow: 3px 2px 5px 2px rgb(134, 134, 134);
+    border-radius: 50%;
+}
+
+.sound-controls img {
+    box-shadow: 1px -9px 9px 3px rgb(255, 255, 255);
+    border-style: none;
+    border-radius: 15%;
+}
+
+
+.sound-card-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 3.2rem;
+    justify-content: center;
+    align-items: center;
+
+    background-color: var(--bg-soud-color);
+    width: 13.8rem;
+    height: 15.2rem;
+    border-radius: 2.4rem;
+    border: none;
+
+    box-shadow: 3px 2px 5px 2px #606072;
+    cursor: pointer;
+}
+
+.sound-card-wrapper:hover {
+
+    scale: 1.08;
+}
+
+
+.volume {
+    width: 9rem;
+    height: .7rem;
+    background: var(--time-color);
+    border-radius: 1rem;
+    cursor: pointer;
+    
+}
+
+.volume::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 1.6rem;
+    height: 1.6rem;
+    border-radius: 100%;
+    background: var(--time-color);
+    cursor: pointer;
+  }
+
+.focus-on .volume {
+    background-color: white;
+}
+
+.focus-on .volume::-webkit-slider-thumb {
+    background: white;
+}
+
+.sound-card-wrapper:hover{
+    animation: shadow-drop-center 1.2s ease 0s 1 normal none;
+    scale: 1.1;
+}
+
+.focus-on {
+    background-color: var(--bg-color-selection);
+    box-shadow: 4px 5px 8px 2px rgba(0, 153, 199, 0.849);
+}
+
+.focus-on img {
+    background-color: var(--bg-color-selection);
+    box-shadow: 1px -9px 9px 3px rgb(108, 226, 247);
+}
+
